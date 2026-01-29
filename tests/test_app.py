@@ -39,4 +39,4 @@ def test_unregister_not_found():
     email = "notfound@mergington.edu"
     activity = "Chess Club"
     response = client.delete(f"/activities/{activity}/unregister?email={email}")
-    assert response.status_code == 404 or response.status_code == 200
+    assert response.status_code == 404
